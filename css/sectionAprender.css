@@ -30,7 +30,7 @@
     font-size: 3.5rem;
     margin-bottom: 1rem;
     font-family: var(--Adoha); 
-    font-weight: 400;
+    font-weight: 500;
 }
 
 #aprender header h2 span {
@@ -89,7 +89,7 @@
     color: #ececec;
     font-size: 1.6rem;
     margin-bottom: 1rem;
-    font-weight: 700;
+    font-weight: 800;
 }
 
 #aprender .content h3 span {
@@ -98,13 +98,13 @@
     background: var(--gradient);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-weight: 600;
+    font-weight: 800;
 }
 
 #aprender .content p {
     color: #838383;
     font-size: 1.6rem;
-    font-weight: 300;
+    font-weight: 400;
 }
 
 #aprender .content p span {
