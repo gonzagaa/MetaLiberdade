@@ -1,0 +1,183 @@
+#praquem {
+    position: relative;
+    overflow: hidden;
+    min-height: 100vh;
+    background-color: #000;
+
+    mask-image: linear-gradient(to top, #000 95%, #00000006);
+
+}
+
+#praquem img.bg {
+    position: absolute;
+    width: 190%;
+    object-fit: cover;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    z-index: 0;
+}
+
+#praquem .content {
+    position: relative;
+    z-index: 1;
+    margin-top: 30rem;
+}
+
+#praquem header {
+    margin-bottom: 5rem;
+}
+
+#praquem header h2 {
+    color: var(--color-text);
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    font-family: var(--Adoha); 
+    font-weight: 400;
+}
+
+#praquem header h2 span {
+    font-family: var(--Adoha); 
+
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 600;
+}
+
+#praquem header p {
+    font-size: 1.6rem;
+    font-weight: 300;
+    color: #fffffff5;
+}
+
+#praquem header p span {
+    font-weight: 500;
+    color: #ffffff;
+}
+
+#praquem .cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+
+#praquem .cards .card {
+    display: flex;
+    align-items: start;
+    gap: 2rem;
+}
+
+#praquem .cards .card span.number {
+    font-size: 5rem;
+    font-family: var(--Adoha); 
+
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 600;
+}
+
+#praquem .cards .card p {
+    color: #ffffffcd;
+    text-align: left;
+    font-size: 1.4rem;
+    font-weight: 300;
+}
+
+#praquem .cards .card p span {
+    color: #ffffffd7;
+    font-weight: 500;   
+}
+
+@media (min-width: 1080px) {
+    section#praquem img.bg {
+        position: absolute;
+        width: 80%;
+        height: 100%;
+        object-fit: cover;
+        left: -10%;
+        top: 0;
+        transform: initial;
+    }
+
+    section#praquem {
+        mask-image: linear-gradient(to top, #000 90%, #00000006);
+    }
+
+    /* section#praquem::before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 35rem;
+        left: 0;
+        right: 0;
+        z-index: 0;
+        background: linear-gradient(to bottom, #fff, #ff0000);
+    } */
+
+     section#praquem::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 20rem;
+        right: 0;
+        left: 0;
+        z-index: 0;
+        background: linear-gradient(to bottom, rgba(255, 0, 0, 0), #141414);
+    } 
+    
+    section#praquem header {
+        margin-bottom: 8rem;
+    }
+
+    section#praquem .content {
+        margin-top: 0;
+        position: initial;
+    }
+
+    section#praquem header {
+        z-index: 1;
+        position: absolute;
+        text-align: left;
+        left: 54%;
+        top: 10%;
+
+        width: 35%;
+    }
+
+    section#praquem header h2 {
+        font-size: 5.5rem;  
+        width: 70%;      
+    }
+
+    section#praquem header p {
+        font-size: 1.6rem;
+        width: 70%;
+    }
+
+    section#praquem .cards {
+        position: absolute;
+        align-items: start;
+        z-index: 1;
+        width: 30%;
+        left: 54%;
+        top: 36%;
+    }
+
+    section#praquem .cards .card {
+        align-items: center;
+    }
+
+    section#praquem .cards .card span.number {
+        font-size: 7rem;
+    }
+
+    section#praquem .cards .card p {
+        font-size: 1.5rem;
+    }
+}

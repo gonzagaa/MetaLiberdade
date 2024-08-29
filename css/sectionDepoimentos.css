@@ -1,0 +1,147 @@
+#depoimentos {
+    overflow: hidden;
+    position: relative;
+    background: linear-gradient(to right, #171717, #1F1F1F);
+}
+
+#depoimentos header {
+    margin-bottom: 5rem;
+}
+
+#depoimentos header h2 {
+    color: var(--color-text);
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    font-family: var(--Adoha); 
+    font-weight: 400;
+}
+
+#depoimentos header h2 span {
+    font-family: var(--Adoha); 
+
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 600;
+}
+
+#depoimentos header p {
+    font-size: 1.6rem;
+    font-weight: 300;
+    color: #ffffff;
+}
+
+#depoimentos .cards {
+    border-radius: 1rem;
+
+    padding-bottom: 5rem;
+}
+
+#depoimentos .cards .card {
+    position: relative;
+    user-select: none;
+}
+
+#depoimentos .cards .card {
+    width: 100%;
+    aspect-ratio: 9/16;
+    border: 2px solid var(--primary-color);
+    object-fit: cover;
+    border-radius: 2rem;
+}
+
+#depoimentos .wrapper.carrossel {
+    position: relative;
+}
+
+.swiper-pagination-bullet {
+    background-color: #515151; /* Altere #ccc para a cor desejada */
+    opacity: 1; /* Certifique-se de que a opacidade está definida como 1 para uma cor sólida */
+  }
+  
+  /* Cor da bolinha ativa */
+  .swiper-pagination-bullet-active {
+    background-color: #F8A120; /* Altere #ff5722 para a cor desejada */
+  }
+
+
+@media (min-width: 1080px) {
+
+    /* section#depoimentos .wrapper.carrossel {
+        width: 100%;
+        padding-inline: 0;
+    } */
+
+    .swiper-pagination {
+        display: none;
+    }
+
+    section#depoimentos header {
+        margin-bottom: 8rem;
+    }
+
+    section#depoimentos header h2 {
+        font-size: 5.5rem;
+    }
+
+    section#depoimentos header p {
+        font-size: 2rem;
+    }
+
+    section#depoimentos .content .cards {
+        overflow: initial;
+        border-radius: 0;
+    }
+
+    section#depoimentos .swiper {
+        position: relative;
+    }
+
+    section#depoimentos .swiper:before,
+    section#depoimentos .swiper:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        width: 10rem;
+        height: 100%;
+        z-index: 2;
+    }
+    
+    section#depoimentos .swiper:before {
+        left: 0;
+        background: linear-gradient(to left, rgba(255, 255, 255, 0), #1f1f1fac);
+    }
+    
+    section#depoimentos .swiper:after {
+        right: 0;
+        background: linear-gradient(to right, rgba(255, 255, 255, 0), #1f1f1fac);
+    }
+
+    section#depoimentos .wrapper.carrossel {
+        position: relative;
+    }
+
+    section#depoimentos img.logo {
+        display: inherit;
+        position: absolute;
+    }
+
+    section#depoimentos img.logo.um {
+        width: 4%;
+        right: -2%;
+        z-index: 1;
+        bottom: -5rem;
+
+        animation: Bg infinite ease-in-out 5s;
+        
+    }
+
+    section#depoimentos img.logo.dois {
+        width: 15%;
+        opacity: .05;
+        filter: blur(3px);
+        z-index: 0;
+        top: -20%;
+        left: -5%;
+    }
+}

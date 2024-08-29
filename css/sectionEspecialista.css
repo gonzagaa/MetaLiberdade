@@ -1,0 +1,223 @@
+#especialista {
+    position: relative;
+    overflow: hidden;
+
+    background: linear-gradient(to top, #171717, #1F1F1F);
+}
+
+#especialista .video video,
+#especialista .image img {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 230%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    filter: brightness(.6);
+    mask-image: linear-gradient(to bottom, #000 80%, #00000006);
+}
+
+#especialista header h2 {
+    color: #fff;
+    font-size: 3rem;
+
+    position: absolute;
+    top: 2.5%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, 0);
+    z-index: 2;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-family: var(--Adoha); 
+}
+
+#especialista header h2 img.coroa {
+    animation: coroa infinite ease-in-out 3s;
+    width: 3rem;
+}
+
+#especialista header h2 img.coroa:nth-child(1) {
+    margin-right: 1rem;
+}
+
+#especialista header h2 img.coroa:nth-child(2) {
+    margin-left: 1rem;
+}
+
+@keyframes coroa {
+    50% {
+        transform: translateY(-7px);
+        filter: drop-shadow(0px 0px 20px #ffffff53);
+    }
+}
+
+#especialista .container {
+    position: relative;
+    z-index: 20;
+
+    margin-top: 35rem;
+}
+
+#especialista .container .text p {
+    color: #dcdcdc;
+    font-size: 1.8rem;
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+#especialista .container .text p:nth-child(1) {
+    font-weight: 600;
+}
+
+#especialista .container .text p span {
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
+}
+
+#especialista .cards {
+    margin-top: 5rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+#especialista .cards .card {
+    display: flex;
+    align-items: center;
+    text-align: left;
+
+    gap: 3rem;
+}
+
+#especialista .cards .card p {
+    font-size: 1.4rem;
+    color: #dcdcdc;
+}
+
+#especialista .cards .card p span {
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
+}
+
+@media (min-width: 1080px) {
+    section#especialista {
+        height: 100vh;
+        min-height: 0;
+    }
+
+    section#especialista .video video,
+    section#especialista .image img {
+        left: 0;
+        top: 0;
+        width: 100%;
+        transform: initial;
+
+        aspect-ratio: 16/9;
+        object-fit: cover;
+    }
+
+    section#especialista::before,
+    section#especialista::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        left: 0;
+        right: 0;
+
+        height: 25rem;
+        z-index: 1;
+    }
+
+    section#especialista::before {
+        top: 0;
+        background: linear-gradient(to bottom, #131313, transparent);
+
+    }
+
+    section#especialista::after {
+        background: linear-gradient(to top, #1a1a1a, transparent);
+        bottom: 0;
+    }
+
+    section#especialista header h2 {
+        font-size: 6rem;
+        top: 10%;
+    }
+
+    section#especialista header h2 img.coroa {
+        width: 5rem;
+    }
+    
+    section#especialista .container .text p {
+        font-size: 1.8rem;
+    }
+
+    section#especialista .container {
+        position: inherit;
+    }
+
+    section#especialista .container .text {
+        position: absolute;
+        z-index: 20;
+        width: 35%;
+        left: 3%;
+        top: 67%;
+        transform: translate(0, -30%);
+
+        backdrop-filter: blur(26px) saturate(80%);
+        -webkit-backdrop-filter: blur(26px) saturate(80%);
+        background-color: rgba(0, 0, 0, 0.526);
+        border: 2px solid #ffffff2a;
+
+        padding: 3rem;
+        border-radius: 2rem;
+    }
+
+    section#especialista .container .text p {
+        color: #efefef;
+    }
+
+    section#especialista .cards {
+        margin-top: initial;
+    
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+    }
+    
+    section#especialista .cards .card {
+        display: flex;
+        align-items: center;
+        text-align: left;
+    
+        position: absolute;
+        z-index: 20;
+
+        backdrop-filter: blur(26px) saturate(80%);
+        -webkit-backdrop-filter: blur(26px) saturate(80%);
+        background-color: rgba(0, 0, 0, 0.194);
+        border: 2px solid #ffffff32;
+
+        padding: 2rem;
+        border-radius: 2rem;
+
+        width: 25%;
+    }
+
+    section#especialista .cards .card:nth-child(1) {
+        top: 66%;
+        right: 15%;
+    }
+    
+    section#especialista .cards .card p {
+        font-size: 1.6rem;
+        color: #ebebeb;
+    }
+}

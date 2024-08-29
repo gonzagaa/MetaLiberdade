@@ -1,0 +1,173 @@
+#video {
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(to right, #171717, #1F1F1F);
+
+    padding-top: 10rem;
+}
+
+#video .wrapper {
+    position: relative;
+    z-index: 10;
+}
+
+#video .blush {
+    width: 500px;
+    height: 500px;
+    background: radial-gradient(#f8a22096, transparent 50%);
+    border-radius: 50%;
+    position: absolute;
+    z-index: 0;
+    top: -25rem;
+    left: -25rem;
+    opacity: .2;
+
+    animation: moveblush infinite 4s linear;
+}
+
+#video .blush.dois {
+  background: radial-gradient(#f8a22079, transparent 50%);
+  top: initial;
+  left: initial;
+  bottom: -10rem;
+  right: -25rem;
+}
+
+#video .div-video {
+    z-index: -1;
+}
+
+#video .div-video img.logo {
+    position: absolute;
+    width: 55%;
+    top: 50%;
+    opacity: .1;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+#video iframe {
+    width: 100%;
+    height: 100%;
+
+    position: relative;
+    border-radius: 1.4rem;
+}
+
+#video .div-video::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 102%;
+    height: 102.2%;
+    border-radius: 1.3rem;
+
+    background: var(--gradient);
+    animation: gradient 1s ease infinite;
+    background-size: 150% 150%;
+}
+
+#video .text {
+    position: relative;
+    z-index: 2;
+}
+
+#video .text h2 {
+    color: var(--color-text);
+    font-weight: 700; 
+    line-height: 1.3;
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin-bottom: 3rem;
+    font-family: var(--Adoha);
+}
+
+#video .text h2 span {
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: var(--Adoha);
+}
+
+#video .text a button {
+    margin-top: 3rem;
+    padding: 1rem 2rem;
+    font-size: 1.6rem;
+    border-radius: .5rem;
+    border: none;
+    font-weight: 600;
+
+    background: var(--gradient);
+    color: #000;
+    animation: gradient 3s ease infinite;
+    background-size: 150% 150%;
+
+    transition: all 200ms ease-in-out;
+}
+
+#video .text a button:hover {
+    cursor: pointer;
+    outline: none;
+    border: none;
+    animation: gradient 2s ease infinite;
+    background-size: 200% 200%;  
+    filter: brightness(1.1);
+}
+
+@media (min-width: 1080px) {
+    section#video .blush {
+        width: 1000px;
+        height: 1000px;
+        top: -25rem;
+        left: -25rem;
+    }
+    
+    section#video .blush.dois {
+        top: initial;
+        left: initial;
+        bottom: -25rem;
+        right: -25rem;
+    }
+
+    section#video .wrapper {
+        padding-inline: 14rem;
+    }
+
+    section#video iframe {
+        width: 100%;
+        height: 100%;
+
+        border-radius: 1.4rem;
+    }
+
+    section#video .div-video::before {
+        border-radius: 1.2rem;
+        width: 100.5%;
+        height: 101%;
+    }
+
+    section#video .text h2 {
+        font-size: 3rem;
+        margin-bottom: 5rem;
+    }
+
+    section#video .text a button {
+        font-size: 2.3rem;
+        margin-top: 5rem;
+    }
+}
+
+@media (min-width: 1300px) {
+    section#video iframe {
+        border-radius: 1.4rem;
+    }
+
+    section#video .div-video::before {
+        border-radius: 1.4rem;
+        width: 100.5%;
+        height: 101%;
+    }
+}

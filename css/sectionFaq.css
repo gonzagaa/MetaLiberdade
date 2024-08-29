@@ -1,0 +1,232 @@
+#faq {
+    position: relative;
+    background: linear-gradient(to right, #171717, #1F1F1F);
+
+    z-index: 40;
+    overflow: hidden;
+}
+
+#faq img.background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    opacity: .02;
+}
+
+#faq .content header {
+    margin-bottom: 4rem;
+}
+
+#faq header h2 {
+    color: var(--color-text);
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    font-family: var(--Adoha); 
+    font-weight: 400;
+}
+
+#faq header h2 span {
+    font-family: var(--Adoha); 
+
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 600;
+}
+
+#faq .content header p {
+    color: #ffffff79;
+    font-size: 1.8rem;
+}
+
+#faq a button {
+    padding: 1rem 2rem;
+    font-size: 1.8rem;
+    border-radius: .5rem;
+    border: none;
+    font-weight: 600;
+
+    background: var(--gradient);
+    color: #000;
+    animation: gradient 3s ease infinite;
+    background-size: 150% 150%;
+
+    transition: all 200ms ease-in-out;
+
+    margin-top: 3rem;
+
+    margin-bottom: 2rem;
+
+    font-family: "Space Grotesk", sans-serif;
+}
+
+#faq a button:hover {
+    cursor: pointer;
+    outline: none;
+    border: none;
+    animation: gradient 2s ease infinite;
+    background-size: 200% 200%;  
+    filter: brightness(1.1);
+}
+
+#faq .faq {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+#faq details {
+    width: 100%;
+    user-select: none;
+}
+
+#faq summary {
+    color: #fffffffe;
+    font-weight: 300;
+    font-size: 1.4rem;
+
+    background: linear-gradient(45deg,  #55555551 0%, #22222238 100%);
+
+    display: flex;
+    text-align: left;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    width: 100%;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 2rem;
+
+    border: 2px solid #5757575a;
+
+    transition: all 200ms ease-in-out;
+}
+
+#faq summary:hover {
+    cursor: pointer;
+    border: 2px solid #ababab93;
+}
+
+#faq details[open] summary {
+    border-radius: 2rem 2rem 0 0;
+    background: linear-gradient(45deg,  #4e4e4eab 0%, #91919165 100%);
+
+    border: 2px solid #ababab93;
+    border-bottom: 0;
+}
+
+#faq summary ion-icon {
+    font-size: 3rem;
+    transition: all .5s ease-in-out;
+    color: var(--primary-color);
+    transform: rotate(-45deg);
+    position: relative;
+    line-height: 0;
+}
+
+
+#faq details[open] summary ion-icon {
+    transform: rotate(0);
+}
+
+details>summary {
+    list-style: none;
+}
+
+summary::-webkit-details-marker {
+    display: none
+}
+
+#faq details p {
+    background: linear-gradient(45deg,#91919138  0%, #4e4e4e51 100%);
+
+
+    font-size: 1.8rem;
+    color: #ffffffbc;
+    padding: 3rem;
+    padding-top: 2rem;
+    padding-right: 10%;
+    text-align: left;
+    font-weight: 200;
+    border: 2px solid #ababab93;
+
+    border-top: 0;
+
+    border-radius: 0 0 2rem 2rem;
+}
+
+@media (min-width: 1080px) {
+    section#faq .content {
+    }
+
+    section#faq header {
+        display: flex;
+        flex-direction: column;
+    }
+
+    section#faq header h2 {
+        font-size: 5.5rem;
+    }
+
+    section#faq header p {
+        font-size: 2rem;
+    }
+
+    section#faq a button {
+        margin-bottom: 0;
+        font-size: 2rem;
+        padding: 1.5rem 3rem;
+    }
+
+    section#faq .faq {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    section#faq summary {
+        font-size: 1.6rem;
+        padding: 2.5rem;
+    }
+
+    section#faq details:nth-child(even) summary {
+        background: linear-gradient(45deg, #22222238 0%, #55555551 100%);
+    }
+
+    #faq details[open]:nth-child(even) summary {
+        background: linear-gradient(45deg, #91919165 0%, #4e4e4eab 100%);
+    }
+
+    section#faq img.background {
+        position: absolute;
+        width: 17%;
+        height: initial;
+        top: 63%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: -1;
+        opacity: .06;
+
+        animation: Bg infinite ease-in-out 5s;
+    }
+
+    @keyframes Bg {
+        0% {
+            transform: scale(1) translate(-50%, -50%);
+        }
+
+        50% {
+            transform: scale(1.1) translate(-45%, -50%);
+            filter: drop-shadow(0px 0px 30px #f8a220b1);
+        }
+
+        100% {
+            transform: scale(1) translate(-50%, -50%);
+        }
+    }
+}

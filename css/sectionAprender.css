@@ -1,0 +1,262 @@
+#aprender {
+    background: linear-gradient(to right, #171717, #1F1F1F);
+    overflow: hidden;
+  
+    position: relative;
+    z-index: 2;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    padding-block: 0;
+}
+
+#aprender .wrapper {
+    position: relative;
+    z-index: 11;
+}
+  
+#aprender .content {
+    padding-block: 8rem;
+}
+
+#aprender header {
+    margin-bottom: 5rem;
+}
+
+#aprender header h2 {
+    color: var(--color-text);
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    font-family: var(--Adoha); 
+    font-weight: 400;
+}
+
+#aprender header h2 span {
+    font-family: var(--Adoha); 
+
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 600;
+}
+
+#aprender .content .cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+
+    position: relative;
+}
+
+#aprender .blush {
+    width: 500px;
+    height: 500px;
+    background: radial-gradient(#f0f0f0, transparent 50%);
+    border-radius: 50%;
+    position: absolute;
+    z-index: -1;
+    top: 57%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: .1;
+
+    animation: moveblush infinite 4s linear;
+}
+
+#aprender .content .cards .card-container {
+    padding: 2rem;
+    border-radius: 2rem;
+    width: 100%;
+
+    background: rgba(45, 45, 45, 0.127);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 2px solid rgba(46, 46, 46, 0.3);
+}
+
+#aprender .content img {
+    width: 3rem;
+    margin-bottom: 2rem;
+}
+
+#aprender .content h3 {
+    font-family: var(--Adoha);
+    letter-spacing: 1px;
+    color: #ececec;
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+#aprender .content h3 span {
+    font-family: var(--Adoha); 
+
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 600;
+}
+
+#aprender .content p {
+    color: #838383;
+    font-size: 1.6rem;
+    font-weight: 300;
+}
+
+#aprender .content p span {
+    font-weight: 600;
+    color: #949494;
+}
+
+@media (min-width: 1080px) {
+    section#aprender {
+        position: relative;
+    }
+
+    section#aprender .blush {
+        width: 800px;
+        height: 800px;
+    }
+
+    section#aprender .slide img {
+        width: 70%;
+        border-radius: 3rem;
+    }
+
+    section#aprender .wrapper {
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
+
+    section#aprender header {
+        margin-bottom: 8rem;
+    }
+
+    section#aprender header h2 {
+        font-size: 5.5rem;
+    }
+
+    section#aprender .content h3 {
+        font-size: 2rem;
+        color: #b3b2b2;
+    }
+
+    section#aprender .content p {
+        width: 80%;
+        font-size: 1.6rem;
+        color: #929292;
+    }
+    
+    section#aprender .content .cards {
+        gap: 1rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+
+        padding-inline: 7rem;
+    }
+
+    section#aprender .content .cards .card {
+        width: 100%;
+        height: 100%;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    section#aprender .content img.icone {
+        position: absolute;
+        width: 17rem;
+
+        mask-image: linear-gradient(to right ,#fff, transparent 85%);
+        filter: blur(4px) saturate(115%);
+        opacity: 1;
+
+        animation: icone infinite 4s ease-in-out;
+    }
+
+    @keyframes icone {
+        50% {
+            transform: rotate(-10deg);
+            filter: blur(4px) saturate(140%);
+        }
+    }
+
+    @keyframes icone2 {
+        50% {
+            transform: rotate(10deg);
+            filter: blur(4px) saturate(140%);
+        }
+    }
+
+    section#aprender .content img.icone.um {
+        top: -15%;
+        left: -15%;
+    }
+
+    section#aprender .content img.icone.dois {
+        top: -15%;
+        right: -15%;
+
+        mask-image: linear-gradient(to left ,#fff, transparent 85%);
+        animation: icone2 infinite 4s ease-in-out;
+    }
+
+    section#aprender .content img.icone.tres {
+        bottom: -15%;
+        left: -15%;
+    }
+
+    section#aprender .content img.icone.quatro {
+        bottom: -15%;
+        right: -15%;
+
+        mask-image: linear-gradient(to left ,#fff, transparent 85%);
+        animation: icone2 infinite 4s ease-in-out;
+    }
+
+    section#aprender .wrapper .content .card-container {
+        position: relative;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+
+        background: rgba(21, 21, 21, 0.878);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+        border: 2px solid rgba(28, 28, 28, 0.577);
+    }
+
+    section#aprender .wrapper .content .card-container .card {
+        padding-block: 3rem;
+    }
+
+}
+
+@media (min-width: 1400px) {
+    .wrapper {
+      width: min(140rem, 100%);
+    }
+
+    section#aprender .wrapper .content .card-container {
+        padding: 2rem;
+    }
+
+    section#aprender .content h3 {
+        font-size: 2.5rem;
+    }
+
+    section#aprender .content p {
+        width: 80%;
+        font-size: 1.6rem;
+    }
+}
+
