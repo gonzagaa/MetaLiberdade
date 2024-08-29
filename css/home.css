@@ -85,7 +85,7 @@
   }
 
   #home .text {
-    margin-bottom: 5rem;
+    margin-bottom: 9rem;
     position: relative;
   }
   
@@ -161,7 +161,7 @@
 
 #home .image img.mobile {
   position: absolute;
-  top: 50%;
+  top: 45%;
   left: 50%;
   transform: translate(-50%, -57%);
   width: 140%;

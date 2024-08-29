@@ -40,8 +40,7 @@ html {
   }
 
   body {
-    background: linear-gradient(to right, #171717, #1F1F1F);
-
+    background:#1F1F1F;
   }
 
   .no-scroll {

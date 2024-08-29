@@ -24,12 +24,11 @@
 }
 
 #plano h2.title {
-    color: var(--color-text);
-    font-size: 1.6rem;
-    letter-spacing: 1px;
     margin-bottom: 3rem;
-    font-family: var(--Adoha); 
-    font-weight: 600;
+    color: #f1f1f1;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.5;
     text-align: left;
 }
 
@@ -38,7 +37,6 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: 700;
-    font-family: var(--Adoha);
 }
 
 #plano h2.plano {
