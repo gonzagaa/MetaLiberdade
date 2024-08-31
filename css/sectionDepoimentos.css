@@ -83,9 +83,9 @@
         padding-inline: 0;
     } */
 
-    .swiper-pagination,
-    .swiper-button-next,
-    .swiper-button-prev {
+    section#depoimentos .swiper-pagination,
+    section#depoimentos .swiper-button-next,
+    section#depoimentos .swiper-button-prev {
         display: none;
     }
 
