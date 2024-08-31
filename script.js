@@ -74,12 +74,16 @@ if (larguraDaTela < 800) {
 
 if (larguraDaTela < 800) {
   var swiper4 = new Swiper(".mySwiper4", {
-    slidesPerView: 1,
-    spaceBetween: 10,
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
+    cssMode: true,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      pagination: {
+        el: ".swiper-pagination",
+      },
+      mousewheel: true,
+      keyboard: true,
   });
 } else {
   var swiper4 = new Swiper(".mySwiper4", {

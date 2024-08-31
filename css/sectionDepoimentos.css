@@ -62,10 +62,19 @@
   }
   
   /* Cor da bolinha ativa */
-  .swiper-pagination-bullet-active {
+ .swiper-pagination-bullet-active {
     background-color: #F8A120; /* Altere #ff5722 para a cor desejada */
-  }
+}
 
+.swiper-button-next {
+    top: 46%;
+    color: #F8A120; /* Altere #ff5722 para a cor desejada */
+}
+  
+.swiper-button-prev {
+    top: 46%;
+    color: #F8A120; /* Altere #ff5722 para a cor desejada */
+}
 
 @media (min-width: 1080px) {
 
