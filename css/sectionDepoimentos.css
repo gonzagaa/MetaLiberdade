@@ -83,7 +83,9 @@
         padding-inline: 0;
     } */
 
-    .swiper-pagination {
+    .swiper-pagination,
+    .swiper-button-next,
+    .swiper-button-prev {
         display: none;
     }
 
