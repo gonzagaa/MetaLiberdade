@@ -93,6 +93,10 @@
 }
 
 @media (min-width: 1080px) {
+    section#praquem {
+        min-height: 110vh;
+    }
+
     section#praquem img.bg {
         position: absolute;
         width: 80%;
@@ -147,7 +151,7 @@
         left: 54%;
         top: 10%;
 
-        width: 35%;
+        width: 40%;
     }
 
     section#praquem header h2 {
@@ -166,7 +170,7 @@
         z-index: 1;
         width: 30%;
         left: 54%;
-        top: 36%;
+        top: 37%;
     }
 
     section#praquem .cards .card {
