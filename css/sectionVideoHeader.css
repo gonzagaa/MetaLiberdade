@@ -1,0 +1,203 @@
+#videoHeader {
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(to right, #171717, #1F1F1F);
+
+    padding-top: 10rem;
+}
+
+#videoHeader .wrapper {
+    position: relative;
+    z-index: 10;
+}
+
+#videoHeader .blush {
+    width: 500px;
+    height: 500px;
+    background: radial-gradient(#f8a22096, transparent 50%);
+    border-radius: 50%;
+    position: absolute;
+    z-index: 0;
+    top: -25rem;
+    left: -25rem;
+    opacity: .2;
+
+    animation: moveblush infinite 4s linear;
+}
+
+#videoHeader .blush.dois {
+  background: radial-gradient(#f8a22079, transparent 50%);
+  top: initial;
+  left: initial;
+  bottom: -10rem;
+  right: -25rem;
+}
+
+#videoHeader .div-video {
+    z-index: 1;
+}
+
+#videoHeader .div-video img.logo {
+    position: absolute;
+    width: 55%;
+    top: 50%;
+    opacity: .1;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+#videoHeader iframe {
+    width: 100%;
+    height: 100%;
+
+    position: relative;
+    border-radius: 1.4rem;
+}
+
+#videoHeader .div-video::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 102%;
+    height: 102.2%;
+    border-radius: 1.3rem;
+
+    background: var(--gradient);
+    animation: gradient 1s ease infinite;
+    background-size: 150% 150%;
+}
+
+#videoHeader .text {
+    position: relative;
+    z-index: 2;
+}
+
+#videoHeader .text h2 {
+    color: var(--color-text);
+    font-weight: 700; 
+    line-height: 1.3;
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin-bottom: 3rem;
+    font-family: var(--Adoha);
+}
+
+#videoHeader .text h2 span {
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: var(--Adoha);
+}
+
+#videoHeader .text a button {
+    margin-top: 3rem;
+    padding: 1rem 2rem;
+    font-size: 1.6rem;
+    border-radius: .5rem;
+    border: none;
+    font-weight: 600;
+
+    background: var(--gradient);
+    color: #000;
+    animation: gradient 3s ease infinite;
+    background-size: 150% 150%;
+
+    transition: all 200ms ease-in-out;
+}
+
+#videoHeader .text a button:hover {
+    cursor: pointer;
+    outline: none;
+    border: none;
+    animation: gradient 2s ease infinite;
+    background-size: 200% 200%;  
+    filter: brightness(1.1);
+}
+
+@media (min-width: 1080px) {
+    section#videoHeader {
+        padding-block: 5rem;
+    }
+
+    section#videoHeader .blush {
+        width: 1000px;
+        height: 1000px;
+        top: -25rem;
+        left: -25rem;
+    }
+    
+    section#videoHeader .blush.dois {
+        top: initial;
+        left: initial;
+        bottom: -25rem;
+        right: -25rem;
+    }
+
+    section#videoHeader .wrapper {
+        padding-inline: 14rem;
+    }
+
+    section#videoHeader iframe {
+        width: 100%;
+        height: 100%;
+
+        border-radius: 1.4rem;
+    }
+
+    section#videoHeader .div-video::before {
+        border-radius: 1.2rem;
+        width: 100.5%;
+        height: 101%;
+    }
+
+    section#videoHeader .text h2 {
+        font-size: 3rem;
+        margin-bottom: 5rem;
+    }
+
+    section#videoHeader .text a button {
+        font-size: 2.6rem;
+        margin-top: 5rem;
+        border-radius: 1.5rem;
+        padding: 1.5rem 3rem;
+    }
+}
+
+@media (min-width: 1300px) {
+    section#videoHeader iframe {
+        border-radius: 1.4rem;
+    }
+
+    section#videoHeader .div-video::before {
+        border-radius: 1.4rem;
+        width: 100.5%;
+        height: 101%;
+    }
+}
+
+@media (min-width: 1080px) {
+    section#videoHeader .wrapper {
+      width: min(100rem, 100%);
+    }
+  }
+
+  @media (min-width: 1200px) {
+    section#videoHeader .wrapper {
+      width: min(120rem, 100%);
+    }
+  }
+
+  @media (min-width: 1400px) {
+    section#videoHeader .wrapper {
+      width: min(125rem, 100%);
+    }
+  }
+
+  @media (min-width: 1700px) {
+    section#videoHeader .wrapper {
+      width: min(130rem, 100%);
+    }
+  }

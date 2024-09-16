@@ -1,0 +1,4 @@
+/* Inicialmente, ocultamos todas as seções */
+#slide, #aprender, #modulos, #praquem, #depoimentos, #plano, #especialista, #faq, #footer, #author {
+    display: none;
+}
