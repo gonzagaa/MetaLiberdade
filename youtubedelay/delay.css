@@ -3,14 +3,21 @@
     display: none;
 }
 
-#videoHeader .text a button {
+#videoHeader .wrapper .content .text button {
     margin-top: 5rem;
+    cursor: not-allowed;
+}
+
+#videoHeader .wrapper .content .text button {
+    background-color: gray;
+    cursor: url('caminho/para/seu-cursor.png'), not-allowed;
 }
 
 #videoHeader .assistindo {
     position: absolute;
     z-index: 100;
-    right: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
     bottom: -2.6rem;
 
     display: flex;
@@ -35,7 +42,7 @@
 }
 
 @media (min-width: 1080px) {
-    section#videoHeader .text a button {
+    section#videoHeader .wrapper .content .text button {
         margin-top: 8rem;
     }
 

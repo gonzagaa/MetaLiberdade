@@ -92,7 +92,7 @@
     font-family: var(--Adoha);
 }
 
-#videoHeader .text a button {
+#videoHeader .text button {
     margin-top: 3rem;
     padding: 1rem 2rem;
     font-size: 1.6rem;
@@ -108,7 +108,7 @@
     transition: all 200ms ease-in-out;
 }
 
-#videoHeader .text a button:hover {
+#videoHeader .text button:hover {
     cursor: pointer;
     outline: none;
     border: none;
@@ -163,7 +163,7 @@
         margin-bottom: 5rem;
     }
 
-    section#videoHeader .text a button {
+    section#videoHeader .text button {
         font-size: 2.6rem;
         margin-top: 5rem;
         border-radius: 1.5rem;

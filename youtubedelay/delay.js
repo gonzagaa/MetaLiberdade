@@ -28,10 +28,28 @@
         } else {
             clearInterval(intervalo); // Para quando atingir 1000
         }
-    }, 3879); // A cada 3.879 milissegundos
+    }, 2879); // A cada 3.879 milissegundos
 }
 
- // Executar a função após o tempo determinado
- setTimeout(showSections, videoDuration);
+function habilitarBotao() {
+    const ctaButton = document.getElementById("ctaButton");
 
- incrementarContador();
+    // Habilitar o botão
+    ctaButton.disabled = false;
+    ctaButton.style.backgroundColor = ""; // Reseta o estilo do botão
+    ctaButton.style.cursor = "pointer";
+
+    // Adicionar redirecionamento ao clicar
+    ctaButton.addEventListener("click", () => {
+        window.location.href = "https://pay.kiwify.com.br/gD9MhBX";
+    });
+}
+
+// Executar a função de mostrar as seções e habilitar o botão após o tempo determinado
+setTimeout(() => {
+    showSections();
+    habilitarBotao();
+}, videoDuration);
+
+// Iniciar o contador de pessoas crescendo
+incrementarContador();
