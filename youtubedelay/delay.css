@@ -2,3 +2,52 @@
 #slide, #aprender, #modulos, #praquem, #depoimentos, #plano, #especialista, #faq, #footer, #author {
     display: none;
 }
+
+#videoHeader .text a button {
+    margin-top: 5rem;
+}
+
+#videoHeader .assistindo {
+    position: absolute;
+    z-index: 100;
+    right: 0;
+    bottom: -2.6rem;
+
+    display: flex;
+    align-items: center;
+    gap: .4rem;
+}
+
+#videoHeader .assistindo span {
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
+
+    font-size: 1.4rem;
+}
+
+#videoHeader .assistindo p {
+    font-weight: 600;
+    color: #fff;
+
+    font-size: 1.2rem;
+}
+
+@media (min-width: 1080px) {
+    section#videoHeader .text a button {
+        margin-top: 8rem;
+    }
+
+    section#videoHeader .assistindo {
+        bottom: -3.5rem;
+    }
+
+    section#videoHeader .assistindo span {
+        font-size: 1.8rem;
+    }
+    
+    section#videoHeader .assistindo p {
+        font-size: 1.6rem;
+    }
+}

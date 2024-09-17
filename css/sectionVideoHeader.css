@@ -119,6 +119,11 @@
 
 @media (min-width: 1080px) {
     section#videoHeader {
+        min-height: 100vh;
+        max-height: 100vh;
+        height: 100vh;
+    }
+    section#videoHeader {
         padding-block: 5rem;
     }
 
@@ -180,24 +185,24 @@
 
 @media (min-width: 1080px) {
     section#videoHeader .wrapper {
-      width: min(100rem, 100%);
+      width: min(90rem, 100%);
     }
   }
 
   @media (min-width: 1200px) {
     section#videoHeader .wrapper {
-      width: min(120rem, 100%);
+      width: min(110rem, 100%);
     }
   }
 
   @media (min-width: 1400px) {
     section#videoHeader .wrapper {
-      width: min(125rem, 100%);
+      width: min(115rem, 100%);
     }
   }
 
   @media (min-width: 1700px) {
     section#videoHeader .wrapper {
-      width: min(130rem, 100%);
+      width: min(120rem, 100%);
     }
   }
